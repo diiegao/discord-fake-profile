@@ -303,14 +303,15 @@ main > #content {
     justify-content: center;
     align-items: center; 
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: #202020;
     border: #333333 solid 1px;
     padding: 10px;
     min-width: 600px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-.add-server-box > .button-custom-top {
+.add-server-box > .button-custom-bottom {
     display: flex;
     justify-content: space-between;
     width: 96%;
@@ -318,7 +319,7 @@ main > #content {
     /* margin-bottom: 20px; */
 }
 
-.button-custom-top > .button-close {
+.button-custom-bottom > .button-close {
     padding: 10px 20px;
     background-color: #f77979;
     border: #f7aaaa solid 1px;
@@ -331,7 +332,7 @@ main > #content {
     background-color: #f86c6c;
 }
 
-.button-custom-top > .button-add-role {
+.button-custom-bottom > .button-add-role {
     padding: 10px 20px;
     background-color: #1350f8;
     border: #033d74 solid 1px;
@@ -339,8 +340,7 @@ main > #content {
     border-radius: 5px;
 }
 
-.button-add-role:hover,
-.button-add-role:focus {
+.button-add-role:hover {
     background-color: #0f2bc9;
 }
 
@@ -349,13 +349,14 @@ main > #content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;   
 }
 
 .add-server-form > .form-input-servername {
     width: 96%;
     margin: 5px 0;
-    padding: 10px 20px;
+    padding: 5px 20px;
     box-sizing: border-box;
 }
 
@@ -363,14 +364,67 @@ main > #content {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    box-sizing: border-box;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 96%;
+    background-color: #2B2C30;
+    border: #303030 solid 1px;
+    border-radius: 5px;
+    margin: 5px 0;
+
 }
 
-.group-add-roles > .form-input {
+.group-add-roles > .add-server-roles {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.add-server-roles > .form-input {
+    width: 100%;
+    margin: 5px 0 5px 0;
+    padding: 5px 20px;
+}
+
+.add-server-roles > .form-input:first-child {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.add-server-roles > .form-input:last-child {
+    margin-right: 10px;
+}
+
+.group-add-roles > .server-role-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.server-role-icon > .form-input {
     width: 100%;
     margin: 5px 10px;
-    padding: 10px 20px;
+    padding: 5px 20px;
+}
+
+.server-role-icon > .button-remove-icons {
+    display: flex;
+    align-items: center;
+    font-size: 20pt;
+    margin: 5px 10px 5px 5px;
+    padding: 5px 20px;
+    line-height: 0;
+}
+
+.button-remove-color {
+    background-color: #fc0707;
+    border: #d83e3e solid 1px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.button-remove-color:hover {
+    background-color: #ec2d2d;
 }
 
 .button-custom-bottom {

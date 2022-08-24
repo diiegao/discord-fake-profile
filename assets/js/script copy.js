@@ -6,52 +6,42 @@
             name: 'aTitty',
             roles: [{
                 name: 'Server Booster',
-                color: '#f0cde6',
-                icon: {}
+                color: '#f0cde6'
             }, {
                 name: 'Litty Titty',
-                color: '#1bbc9c',
-                icon: {}
+                color: '#1bbc9c'
             }, {
                 name: 'Verified',
-                color: '#babbbf',
-                icon: {}
+                color: '#babbbf'
             }]
         }, {
             id: 2,
             name: 'Sniper DAO',
             roles: [{
                 name: 'Sniper Gang',
-                color: '#00dcff',
-                icon: {}
+                color: '#00dcff'
             }, {
                 name: 'alpha α',
-                color: '#3598db',
-                icon: {}
+                color: '#3598db'
             }, {
                 name: 'Players',
-                color: '#babbbf',
-                icon: {}
+                color: '#babbbf'
             }]
         }, {
             id: 3,
             name: 'Whitelist HUB',
             roles: [{
                 name: 'HUB HOLDER',
-                color: '#e8c545',
-                icon: {}
+                color: '#e8c545'
             }, {
                 name: 'Alpha Hub',
-                color: '#babbbf',
-                icon: {}
+                color: '#babbbf'
             }, {
                 name: 'Whitelist Opportunities',
-                color: '#babbbf',
-                icon: {}
+                color: '#babbbf'
             }, {
                 name: 'VERIFIED',
-                color: '#5497d6',
-                icon: {}
+                color: '#5497d6'
             }]
         }, {
             id: 4,
@@ -59,21 +49,16 @@
             roles: [{
                 name: '🐶 DAWG LIST',
                 color: '#9b59b6',
-                icon: {
-                    urlFirst: 'assets/img/dawg.svg'
-                }
+                icon: 'assets/img/dawg.svg'
             }, {
                 name: 'WL Ping',
-                color: '#f8f3f3',
-                icon: {}
+                color: '#f8f3f3'
             }, {
                 name: 'Alpha Ping',
-                color: '#f7f3f3',
-                icon: {}
+                color: '#f7f3f3'
             }, {
                 name: 'Raider Ping',
-                color: '#ffffff',
-                icon: {}
+                color: '#ffffff'
             }]
         }, {
             id: 5,
@@ -81,39 +66,30 @@
             roles: [{
                 name: 'Teste',
                 color: '#9b59b6',
-                icon: { 
-                    urlFirst: 'assets/img/teste.jpg'
-                }
+                icon: 'assets/img/teste.jpg'
             }, {
                 name: 'WL Ping',
                 color: '#f8f3f3',
-                icon: {
-                    urlFirst: 'assets/img/teste2.jpg'
-                }
+                icon: 'assets/img/teste2.jpg'
             }]
         }, {
             id: 6,
             name: 'AI Battle Degens',
             roles: [{
                 name: 'Recruit',
-                color: '#3598db',
-                icon: {}
+                color: '#3598db'
             }, {
                 name: 'Gamers',
-                color: '#ce0d0e',
-                icon: {}
+                color: '#ce0d0e'
             }, {
                 name: 'Need WL',
-                color: '#ffffff',
-                icon: {}
+                color: '#ffffff'
             }, {
                 name: 'Raids',
-                color: '#00ec66',
-                icon: {}
+                color: '#00ec66'
             }, {
                 name: 'Giveaways',
-                color: '#ff7500',
-                icon: {}
+                color: '#ff7500'
             }]
         }
     ]
@@ -132,13 +108,9 @@
             const serverAddName = document.querySelector('#server-add-name')
             const serverAddRole = document.querySelectorAll('#server-add-role')
             const serverAddRoleColor = document.querySelectorAll('#server-add-role-color')
-            const serverAddRoleFirstIcon = document.querySelectorAll('#server-add-role-icons-1')
-            const serverAddRoleSecIcon = document.querySelectorAll('#server-add-role-icons-2')
 
             let rolesValue = []
             let rolesColorValue = []
-            let rolesIconFirstValue = []
-            let rolesIconSecValue = []
 
             serverAddRole.forEach(e => {
                 rolesValue.push(e.value)
@@ -146,17 +118,10 @@
             serverAddRoleColor.forEach(e => {
                 rolesColorValue.push(e.value)
             })
-            serverAddRoleFirstIcon.forEach(e => {
-                rolesIconFirstValue.push(e.value)
-            })
-            serverAddRoleSecIcon.forEach(e => {
-                rolesIconSecValue.push(e.value)
-            })
 
             if(serverAddName.value != '') {
 
                 let objArray = []
-                let objIcon = []
 
                 for(let i = 0; i < serverAddRole.length; i++) {
 
@@ -165,16 +130,9 @@
                         return
                     }
 
-                    rolesIconFirstValue[i] = rolesIconFirstValue[i] ? rolesIconFirstValue[i] : undefined
-                    rolesIconSecValue[i] = rolesIconSecValue[i] ? rolesIconSecValue[i] : undefined
-
                     let objRoles = {
                         name: rolesValue[i],
-                        color: rolesColorValue[i], 
-                        icon: {
-                            urlFirst: rolesIconFirstValue[i],
-                            urlSec: rolesIconSecValue[i]
-                        }
+                        color: rolesColorValue[i]
                     }
 
                     objArray.push(objRoles)
@@ -186,8 +144,6 @@
                     name: serverAddName.value, 
                     roles: [...objArray]
                 }
-
-                console.log("objIcon2:" + objIcon)
 
                 let objArrayTeste = []
                 objArrayTeste.push(objReal)
@@ -230,11 +186,10 @@
     
                 // Roles Profile
                 roleObj[i].forEach(e => {
-                    const verifFirstIcon = e.icon.urlFirst ? `<img src="${e.icon.urlFirst}" width="16" height="16">` : ''
-                    const verifSecIcon = e.icon.urlSec ? `<img src="${e.icon.urlSec}" width="16" height="16">` : ''
+                    const verifIcon = e.icon ? `<img src="${e.icon}" width="16" height="16">` : ''
                     const template = document.createElement('div')
                     template.classList.add('role-box')
-                    template.innerHTML = `<div class="role-icon" style="background-color: ${e.color};"></div><div class="role-text">${verifFirstIcon} ${verifSecIcon} ${e.name}</div>`
+                    template.innerHTML = `<div class="role-icon" style="background-color: ${e.color};"></div><div class="role-text">${verifIcon} ${e.name}</div>`
                     const node = template.firstElementChild
                     selectRoles.appendChild(template)
                 })         
@@ -340,32 +295,68 @@
         const buttonAddRole = document.querySelector('#add-new-role')
         buttonAddRole.addEventListener('click', function () {
             const getGroupRoles = document.querySelectorAll('.group-add-roles')
-            // let setRoleID = getGroupRoles.length
-            const setRoleID = () => parseInt(Date.now() * Math.random())
-            const tryRoleID = []
-            tryRoleID.push(setRoleID())
+            const setRoleID = getGroupRoles.length + 1
             const createNewGroup = document.createElement('div')
             createNewGroup.classList.add('group-add-roles')
-            createNewGroup.dataset.roleId = tryRoleID[0]
+            createNewGroup.dataset.roleId = setRoleID
             createNewGroup.innerHTML = `
                 <div class="add-server-roles">
                     <input type="text" id="server-add-role" class="button-color form-input" placeholder="Nome do Cargo">
                     <input type="text" id="server-add-role-color" class="button-color form-input" placeholder="Cor do Cargo">
                 </div>
                 <div class="server-role-icon">
-                    <input type="text" id="server-add-role-icons-1" class="button-color form-input" placeholder="Link de icone (Apenas LINK)">
-                    <input type="text" id="server-add-role-icons-2" class="button-color form-input" placeholder="Link de icone (Apenas LINK)">
-                    <button id="remove-role-icon" data-icon-role-id="${tryRoleID[0]}" class="button-remove-icons button-remove-color">X</button>
+                    <input type="text" id="server-add-role-icons" class="button-color form-input" placeholder="Link de icone">
+                    <input type="text" id="server-add-role-icons" class="button-color form-input" placeholder="Link de icone">
+                    <button id="remove-role-icon" data-icon-role-id="${setRoleID}" class="button-remove-icons button-remove-color">X</button>
                 </div>
             `
+            // console.log(this)
             addServerContent.appendChild(createNewGroup)
+        })
 
-            // Acho que só assim para atualizar o DOM para esse botão funcionar #gambiarra?
-            const getButtonRemove = document.querySelector(`[data-icon-role-id="${tryRoleID[0]}"]`)
-            getButtonRemove.addEventListener('click', function() {
-                getGroupToRemove = document.querySelector(`[data-role-id="${tryRoleID[0]}"]`)
-                getGroupToRemove.remove()
+            // Add new input link icon
+        document.querySelector('#popup-add-server').addEventListener('click', function () {
+            const buttonAddIcon = document.querySelectorAll('#server-add-more-role-icons')
+            buttonAddIcon.forEach(e => {
+                e.addEventListener('click', function() {
+                    const tryRoleId = document.querySelectorAll('.group-add-roles')
+                    tryRoleId.forEach(e => {
+                        if(e.dataset.roleId == this.dataset.iconRoleId) {
+                            const addIconContent = document.querySelector(`[data-role-id="${this.dataset.iconRoleId}"] > .server-role-icon`)
+                            const createNewInputIcon = document.createElement('input')
+                            createNewInputIcon.setAttribute("id", "server-add-role-icons")
+                            createNewInputIcon.setAttribute("placeholder", "Link de icone")
+                            createNewInputIcon.classList.add('button-color')
+                            createNewInputIcon.classList.add('form-input')
+                            addIconContent.appendChild(createNewInputIcon)
+                        }
+                    })
+                    console.log(buttonAddIcon)     
+                })
             })
         })
-    
+
+        // const buttonAddIcon = document.querySelectorAll('#server-add-more-role-icons')
+        //     buttonAddIcon.forEach(e => {
+        //         e.addEventListener('click', function() {
+        //             const tryRoleId = document.querySelectorAll('.group-add-roles')
+        //             tryRoleId.forEach(e => {
+        //                 if(e.dataset.roleId == this.dataset.iconRoleId) {
+        //                     const addIconContent = document.querySelector(`[data-role-id="${this.dataset.iconRoleId}"] > .server-role-icon`)
+        //                     const createNewInputIcon = document.createElement('input')
+        //                     createNewInputIcon.setAttribute("id", "server-add-role-icons")
+        //                     createNewInputIcon.setAttribute("placeholder", "Link de icone")
+        //                     createNewInputIcon.classList.add('button-color')
+        //                     createNewInputIcon.classList.add('form-input')
+        //                     addIconContent.appendChild(createNewInputIcon)
+        //                 }
+        //             })
+
+        //             console.log(buttonAddIcon) 
+                    
+        //         })
+        //     })
+
+        // })
+        
     }) //END
