@@ -2,7 +2,7 @@
     document.addEventListener("DOMContentLoaded", () => {
 
         let serverList = [{
-            id: 1,
+            id: 0,
             name: 'aTitty',
             roles: [{
                 name: 'Server Booster',
@@ -18,7 +18,7 @@
                 icon: {}
             }]
         }, {
-            id: 2,
+            id: 1,
             name: 'Sniper DAO',
             roles: [{
                 name: 'Sniper Gang',
@@ -34,7 +34,7 @@
                 icon: {}
             }]
         }, {
-            id: 3,
+            id: 2,
             name: 'Whitelist HUB',
             roles: [{
                 name: 'HUB HOLDER',
@@ -54,7 +54,7 @@
                 icon: {}
             }]
         }, {
-            id: 4,
+            id: 3,
             name: 'Jelly eSports',
             roles: [{
                 name: '🐶 DAWG LIST',
@@ -76,23 +76,7 @@
                 icon: {}
             }]
         }, {
-            id: 5,
-            name: 'Teste',
-            roles: [{
-                name: 'Teste',
-                color: '#9b59b6',
-                icon: { 
-                    urlFirst: 'assets/img/teste.jpg'
-                }
-            }, {
-                name: 'WL Ping',
-                color: '#f8f3f3',
-                icon: {
-                    urlFirst: 'assets/img/teste2.jpg'
-                }
-            }]
-        }, {
-            id: 6,
+            id: 4,
             name: 'AI Battle Degens',
             roles: [{
                 name: 'Recruit',
@@ -113,6 +97,98 @@
             }, {
                 name: 'Giveaways',
                 color: '#ff7500',
+                icon: {}
+            }]
+        }, {
+            id: 5,
+            name: 'Alpha C',
+            roles: [{
+                name: 'Membro VIP',
+                color: '#f1c40f',
+                icon: {
+                    urlFirst: 'https://cdn.discordapp.com/role-icons/982001390547255378/bfbc28bf41df6cd6ad8c95f2baa3a48e.webp?size=16&quality=lossless'
+                }
+            }, {
+                name: 'verificado',
+                color: '#00d2fc',
+                icon: {}
+            }, {
+                name: 'wallet',
+                color: '#ffffff',
+                icon: {}
+            }, {
+                name: 'News',
+                color: '#992d22',
+                icon: {
+                    urlFirst: 'assets/img/emojis/51cd8436fb99a6f12257db34780fb7a7.svg'
+                }
+            }, {
+                name: 'Sorteios',
+                color: '#992d22',
+                icon: {
+                    urlFirst: 'assets/img/emojis/34039c067d82e86f0f1a07ad38e86685.svg'
+                }
+            }, {
+                name: 'Trending SOL',
+                color: '#992d22',
+                icon: {
+                    urlFirst: 'assets/img/emojis/766c86e6244395ea36c530a7a4f27242.svg'
+                }
+            }, {
+                name: 'Trending game',
+                color: '#992d22',
+                icon: {
+                    urlFirst: 'assets/img/emojis/f1426431eb7c60fb8c072f90acb07ceb.svg'
+                }
+            }, {
+                name: 'Allowlists',
+                color: '#992d22',
+                icon: {
+                    urlFirst: 'assets/img/emojis/2424297076c0d1c8499820fc4f9d9f57.svg'
+                }
+            }, {
+                name: 'Perna',
+                color: '#992d22',
+                icon: {
+                    urlFirst: 'assets/img/emojis/344019c5657ef505cd2458f05f1c89fe.svg'
+                }
+            }, {
+                name: 'Degenz',
+                color: '#992d22',
+                icon: {
+                    urlFirst: 'assets/img/emojis/fd75504bd8a4810f750bdb5a94ade84c.svg'
+                }
+            }, {
+                name: 'Alertas',
+                color: '#992d22',
+                icon: {}
+            }, {
+                name: 'stealth',
+                color: '#992d22',
+                icon: {}
+            }, {
+                name: 'calls Eth',
+                color: '#992d22',
+                icon: {}
+            }]
+        }, {
+            id: 6,
+            name: 'Thomas DAO',
+            roles: [{
+                name: 'Server Booster',
+                color: '#f480ff',
+                icon: {}
+            }, {
+                name: 'King Jerry',
+                color: '#f1c40f',
+                icon: {}
+            }, {
+                name: 'soldier jerry',
+                color: '#1f8b4d',
+                icon: {}
+            }, {
+                name: 'jerry',
+                color: '#d46e08',
                 icon: {}
             }]
         }
@@ -235,11 +311,12 @@
         // Server List + Button
         getServerName.forEach((e, i) => {
             const selectServers = document.querySelector('header > .servers-roles')
+            const disableFixed = e.id >= 0 && e.id <= 6 ? "disabled" : ''
             const createGroupButton = document.createElement('div')
             createGroupButton.classList.add('button-role-group')
             createGroupButton.innerHTML = `
                 <button id="button-add-role" class="button-role button-color" data-role-id="${e.id}">${e.name}</button>
-                <button id="button-remove-server" class="button-remove" data-remove-role-id="${e.id}">X</button>
+                <button id="button-remove-server" class="button-remove" data-remove-role-id="${e.id}" ${disableFixed}>X</button>
             `
   
             selectServers.appendChild(createGroupButton)        
