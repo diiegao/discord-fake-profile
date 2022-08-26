@@ -72,13 +72,42 @@ header > .servers-roles {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
 }
 
 .servers-roles > button {
-    padding: 10px 20px;
+    padding: 10px;
     margin: 10px 5px;
+    /* width: 80%; */
+}
+
+.servers-roles > .button-role-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
     width: 80%;
+}
+
+.button-role-group > .button-role {
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+}
+
+.button-role-group > .button-remove {
+    background-color: #fc0707;
+    border: #d83e3e solid 1px;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.button-remove:hover {
+    background-color: #ec2d2d;
 }
 
 main > #content {

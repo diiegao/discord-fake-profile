@@ -117,6 +117,7 @@
             }]
         }
     ]
+
         // Adiciona servidores de usuario nos servidores fixo
         const localServerList = localStorage.getItem('serverListUser')
 
@@ -180,14 +181,29 @@
                     objArray.push(objRoles)
                 }
 
-                const countID =  serverList.length + 1
+                const filterID = (arr, value) => arr.filter(e => e.id === value)
+                const generateNewID = (range) => parseInt(Math.floor((Math.random() * range)))
+
+                const newID = []
+                newID[0] = generateNewID(500)
+                const verifiyID = filterID(serverList, newID[0])
+                // let newVerifyID = verifiyID == false ? newID[0] : newVerifyID
+                let newVerifyID = undefined
+
+                if (verifiyID == false) {
+                    newVerifyID = newID[0]
+                } else {
+                    alert('tente de novo!')
+                    return
+                }
+                
                 let objReal = {
-                    id: countID + 1,
+                    id: newVerifyID,
                     name: serverAddName.value, 
                     roles: [...objArray]
                 }
 
-                console.log("objIcon2:" + objIcon)
+                // console.log("objIcon2:" + objIcon)
 
                 let objArrayTeste = []
                 objArrayTeste.push(objReal)
@@ -211,7 +227,7 @@
         })
         
         // Carrega a lista de botões de servers
-        const getServerName = serverList.map(server => server.name)
+        const getServerName = serverList.map(server => server)
     
         const getRoleObj = role => role.roles.map(role => role)
         const roleObj = serverList.map(getRoleObj)
@@ -219,15 +235,26 @@
         // Server List + Button
         getServerName.forEach((e, i) => {
             const selectServers = document.querySelector('header > .servers-roles')
-            const createButton = document.createElement("button")
-            createButton.innerHTML = e
-            createButton.classList.add("button-color")
-    
-            // Button Click
-            createButton.addEventListener("click", () => {
+            const createGroupButton = document.createElement('div')
+            createGroupButton.classList.add('button-role-group')
+            createGroupButton.innerHTML = `
+                <button id="button-add-role" class="button-role button-color" data-role-id="${e.id}">${e.name}</button>
+                <button id="button-remove-server" class="button-remove" data-remove-role-id="${e.id}">X</button>
+            `
+  
+            selectServers.appendChild(createGroupButton)        
+        })
+
+        // Button Role Group Button Click (Select Role from Profile)
+        const buttonRoleGroup = document.querySelectorAll('.button-role-group > #button-add-role')
+        const buttonSelectRole = []
+        buttonRoleGroup.forEach(e => buttonSelectRole.push(e))
+        buttonSelectRole.map((e, i) => {
+            e.addEventListener('click', function() {
+                // console.log(e + " - " + i)
                 const selectRoles = document.querySelector('.profile-roles')
                 selectRoles.innerHTML = ''
-    
+
                 // Roles Profile
                 roleObj[i].forEach(e => {
                     const verifFirstIcon = e.icon.urlFirst ? `<img src="${e.icon.urlFirst}" width="16" height="16">` : ''
@@ -237,10 +264,35 @@
                     template.innerHTML = `<div class="role-icon" style="background-color: ${e.color};"></div><div class="role-text">${verifFirstIcon} ${verifSecIcon} ${e.name}</div>`
                     const node = template.firstElementChild
                     selectRoles.appendChild(template)
-                })         
+                })
             })
-    
-            selectServers.appendChild(createButton)        
+        })
+
+        // Button Remove Server - CTRL+C e CTRL+V do button acima xD
+        const buttonRemoveServer = document.querySelectorAll('.button-role-group > #button-remove-server')
+        const buttonTryRemove = []
+        buttonRemoveServer.forEach(e => buttonTryRemove.push(e))
+        buttonTryRemove.map((e, i) => {
+            e.addEventListener('click', function() {
+                const getServerID = this.dataset.removeRoleId
+                const getLocalServerList = JSON.parse(localServerList)
+                getLocalServerList.map((m, i) => {
+                    if(m.id == getServerID) {
+                        getLocalServerList[i] = 'removed'
+                    }
+                })
+                // nem eu sei como essa gambiarra funciona, mas deu certo :D
+                const strLocalList = JSON.stringify(getLocalServerList)
+                let removeLocalList = ''
+                if(strLocalList.search(`"removed",`)) {
+                    removeLocalList = strLocalList.replace(`"removed",`, '')
+                } else {
+                    removeLocalList = strLocalList.replace(`,"removed"`, '')
+                }
+                
+                localStorage.setItem('serverListUser', removeLocalList)
+                document.location.reload(true)
+            })
         })
     
         // Nick + Tag
@@ -293,11 +345,6 @@
         const divProfAvatar = document.querySelector('.profile-banner > .profile-avatar')
         const discBanner = localStorage.getItem('profileBanner')
         if (discBanner) {
-            // const createImgBanner = document.createElement("img")
-            // createImgBanner.setAttribute("src", discBanner)
-            // createImgBanner.setAttribute("alt", "Avatar")
-            // createImgBanner.classList.add("img-banner")
-            // divBanner.appendChild(createImgBanner)
             divBanner.style.backgroundImage = `url(${discBanner})`
             divBanner.classList.add("banner-image")
             divProfAvatar.style.top = "75px"
@@ -339,8 +386,6 @@
         const addServerContent = document.querySelector('.add-server-form')
         const buttonAddRole = document.querySelector('#add-new-role')
         buttonAddRole.addEventListener('click', function () {
-            const getGroupRoles = document.querySelectorAll('.group-add-roles')
-            // let setRoleID = getGroupRoles.length
             const setRoleID = () => parseInt(Date.now() * Math.random())
             const tryRoleID = []
             tryRoleID.push(setRoleID())
