@@ -387,8 +387,8 @@
         const testHash = localStorage.getItem('hashDisc') ? localStorage.getItem('hashDisc') : '123'
         divProfileName.innerHTML = `${testName}<span>#${testHash}</span>`
     
-        const nameDisc = document.querySelector('.discord-set-infos > #nome')
-        const hashDisc = document.querySelector('.discord-set-infos > #hashtag')
+        const nameDisc = document.querySelector('#set-user-profile > .set-user-name-hash > #nome')
+        const hashDisc = document.querySelector('#set-user-profile > .set-user-name-hash > #hashtag')
         const btnName = document.querySelector('#btn-name-hash')
         btnName.addEventListener("click", () => {
             
@@ -400,7 +400,7 @@
         })
     
         // Avatar
-        const avatarFile = document.querySelector('.discord-set-infos > #profile-avatar')
+        const avatarFile = document.querySelector('.set-user-avatar-banner > #profile-avatar')
         avatarFile.addEventListener('change', function () {
             const reader = new FileReader()
             reader.addEventListener("load", () => {
@@ -416,7 +416,7 @@
         }
     
         // Banner Image
-        const bannerFile = document.querySelector('.discord-set-infos > #profile-banner')
+        const bannerFile = document.querySelector('.set-user-avatar-banner > #profile-banner')
         bannerFile.addEventListener('change', function () {
             const reader = new FileReader()
             reader.addEventListener("load", () => {
@@ -426,6 +426,7 @@
             document.location.reload(true)
         })
     
+        // Render banner
         const divBanner = document.querySelector('.discord-profile > .profile-banner')
         const divProfAvatar = document.querySelector('.profile-banner > .profile-avatar')
         const discBanner = localStorage.getItem('profileBanner')
@@ -436,7 +437,7 @@
         }
     
         // Remove Banner Image
-        const bannerRemoveBtn = document.querySelector('.discord-set-infos > #remove-banner')
+        const bannerRemoveBtn = document.querySelector('.set-user-avatar-banner > #remove-banner')
         bannerRemoveBtn.addEventListener('click', function () {
             localStorage.removeItem('profileBanner')
             document.location.reload(true)

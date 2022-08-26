@@ -50,7 +50,7 @@ main > header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 18%;
+    flex-basis: 19%;
     height: 100vh;
     border-right: #272727 solid 1px;
     /* flex-grow: 1; */
@@ -113,8 +113,9 @@ header > .servers-roles {
 main > #content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    flex-basis: 82%;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 70%;
     /* flex-grow: 9; */
 }
 
@@ -122,27 +123,6 @@ main > #content {
     color: #ccc;
     text-align: center;
     width: 100%;
-}
-
-#content > .discord-set-infos {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.discord-set-infos > .text-input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 10px;
-    margin: 10px 10px;
-}
-
-.discord-set-infos > input[type="file"] {
-    display: none;
-    /* width: 130px; */
 }
 
 #content > .discord-profile {
@@ -475,4 +455,110 @@ main > #content {
 .button-confirm-add-role:hover,
 .button-confirm-add-role:focus {
     background-color: #1d9e32;
+}
+
+main > #set-user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 19%;
+    height: 100vh;
+    border-left: #272727 solid 1px;
+    /* flex-grow: 1; */
+    overflow: auto;
+}
+
+/* #set-user-profile > .text-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 10px 10px;
+} */
+
+#set-user-profile > .set-user-name-hash {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    border-bottom: #272727 solid 1px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.set-user-name-hash > .text-input {
+    padding: 5px 10px;
+    margin: 0 20px 10px 20px;
+}
+
+.set-user-name-hash > #btn-name-hash {
+    padding: 10px 10px;
+}
+
+#set-user-profile > .set-user-avatar-banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    border-bottom: #272727 solid 1px;
+}
+
+.set-user-avatar-banner > input[type="file"] {
+    display: none;
+    /* width: 130px; */
+}
+
+.label-input {
+    padding: 10px 10px;
+    margin: 0 20px 10px 20px;
+}
+
+.separator {
+    width: 100%;
+    border-bottom: #272727 solid 1px;
+}
+
+#set-user-profile > .set-user-status {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    border-bottom: #272727 solid 1px;
+} 
+
+.set-user-status > .status-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.status-row > .status-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.status-row > .status-online {
+    background-color: #01b101;
+}
+
+.status-row > .status-busy {
+    background-color: #ce0000;
+}
+
+.status-row > .status-away {
+    background-color: #e6b000;
+}
+
+.status-row > .status-invisible {
+    background-color: #b3b3b3;
 }

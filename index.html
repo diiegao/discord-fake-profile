@@ -18,8 +18,8 @@
             </div>
         </header>
         <section id="content">
-            <h1>Teste</h1>
-            <div class="discord-set-infos">
+            <!-- <h1>Teste</h1> -->
+            <!-- <div class="discord-set-infos">
                 <input type="text" id="nome" class="text-input button-color" placeholder="Nome">
                 <input type="text" id="hashtag" class="text-input button-color" placeholder="Hash">
                 <button id="btn-name-hash" class="text-input button-color">Aplicar</button>
@@ -29,7 +29,7 @@
                 <label for="profile-banner" class="text-input button-color">Mudar Imagem do Banner</label>
                 <input type="file" id="profile-banner">
                 <button id="remove-banner" class="text-input button-color">Remover Imagem do Banner</button>
-            </div>
+            </div> -->
             <div class="discord-profile">
                 <div class="profile-banner">
                     <!-- <img src="assets/img/avatar.png" alt="Avatar" class="profile-avatar"> -->
@@ -61,6 +61,39 @@
                 </div>
             </div>
         </section>
+        <aside id="set-user-profile">
+            <div class="set-user-name-hash">
+                <h3>Alterar Nome e Hash</h3>
+                <input type="text" id="nome" class="text-input button-color" placeholder="Nome">
+                <input type="text" id="hashtag" class="text-input button-color" placeholder="Hash">
+                <button id="btn-name-hash" class="text-input button-color">Mudar Nome e Hash</button>     
+            </div>
+            <div class="set-user-status">
+                <h3>Alterar Status</h3>
+                <div class="status-row">
+                    <div class="status-circle status-online"></div>
+                    <div class="status-circle status-busy"></div>
+                    <div class="status-circle status-away"></div>
+                    <div class="status-circle status-invisible"></div>
+                </div>
+                <div class="separador" style="margin-bottom: 10px;"></div>
+            </div>
+            <div class="set-user-badges"></div>
+            <div class="separador" style="margin-bottom: 10px;"></div>
+            <div class="set-user-avatar-banner">
+                <h3>Editar Avatar</h3>
+                <label for="profile-avatar" class="label-input button-color">Mudar Avatar</label>
+                <input type="file" id="profile-avatar">
+                <div class="separator" style="margin-bottom: 10px;"></div>
+                <h3>Editar Banner</h3>
+                <div class="label-input button-color">Mudar Cor do Banner &nbsp;&nbsp;&nbsp;<input type="color" id="banner-color"></div>
+                <div class="separator" style="margin-bottom: 10px;"></div>
+                <label for="profile-banner" class="label-input button-color">Mudar Imagem do Banner</label>
+                <input type="file" id="profile-banner">
+                <div class="separator" style="margin-bottom: 10px;"></div>
+                <button id="remove-banner" class="label-input button-color">Remover Imagem do Banner</button>
+            </div>
+        </aside>
     </main>
     <section id="popup-add-server">
             <div class="add-server-box">
