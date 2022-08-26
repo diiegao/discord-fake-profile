@@ -281,17 +281,25 @@
                         getLocalServerList[i] = 'removed'
                     }
                 })
+
                 // nem eu sei como essa gambiarra funciona, mas deu certo :D
                 const strLocalList = JSON.stringify(getLocalServerList)
-                let removeLocalList = ''
-                if(strLocalList.search(`"removed",`)) {
-                    removeLocalList = strLocalList.replace(`"removed",`, '')
+                const firstTeste = strLocalList.search('removed')
+
+                if(strLocalList.charAt(firstTeste + 8) == ",") {
+                    const substLocalList = strLocalList.replace(strLocalList.substring(firstTeste - 1, firstTeste + 9), '')
+                    localStorage.setItem('serverListUser', substLocalList)
+                    document.location.reload(true)
+
+                } else if(strLocalList.charAt(firstTeste - 2) == ",") {
+                    const substLocalList = strLocalList.replace(strLocalList.substring(firstTeste - 2, firstTeste + 8), '')
+                    localStorage.setItem('serverListUser', substLocalList)
+                    document.location.reload(true)
+                    
                 } else {
-                    removeLocalList = strLocalList.replace(`,"removed"`, '')
+                    localStorage.setItem('serverListUser', '')
+                    document.location.reload(true)
                 }
-                
-                localStorage.setItem('serverListUser', removeLocalList)
-                document.location.reload(true)
             })
         })
     
