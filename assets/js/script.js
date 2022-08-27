@@ -201,6 +201,26 @@
             let objParse = JSON.parse(localServerList)
             objParse.map(e => serverList.push(e))
         }
+
+        // Carrega Status do User
+        const getStatusUser = localStorage.getItem('userStatus')
+        const getDivStatus = document.querySelector('.discord-profile > .avatar-status')
+        if(getStatusUser == 1) {
+            getDivStatus.classList.add('avatar-status-online-color')
+            getDivStatus.innerHTML = ''
+        } else if(getStatusUser == 2) {
+            getDivStatus.classList.add('avatar-status-busy-color')
+            getDivStatus.innerHTML = '<div class="status-cut-busy"></div>'
+        } else if(getStatusUser == 3) {
+            getDivStatus.classList.add('avatar-status-away-color')
+            getDivStatus.innerHTML = '<div class="status-cut-away"></div>'
+        } else if(getStatusUser == 4) {
+            getDivStatus.classList.add('avatar-status-invisible-color')
+            getDivStatus.innerHTML = '<div class="status-cut-invisible"></div>'
+        } else {
+            getDivStatus.classList.add('avatar-status-online-color')
+            getDivStatus.innerHTML = ''
+        }
    
         // Adicionar novo servidor (user)
         const buttonConfirmAddServer = document.querySelector('#confirm-add-server')
@@ -397,6 +417,46 @@
     
             divProfileName.innerHTML = ''
             divProfileName.innerHTML = `${nameDisc.value}<span>#${hashDisc.value}</span>`
+        })
+
+        // Global?
+        const getProfileStatus = document.querySelector('.discord-profile > .avatar-status')
+        const getClass = getProfileStatus.classList
+        
+        //Change Status (Online)
+        const findButtonOnline = document.querySelector('.set-user-status > .status-row > .status-online') 
+        findButtonOnline.addEventListener('click', function() {
+            getClass.remove(getClass[1])
+            getProfileStatus.classList.add('avatar-status-online-color')
+            getProfileStatus.innerHTML = ''
+            localStorage.setItem('userStatus', 1)
+        })
+
+        //Change Status (Busy)
+        const findButtonBusy = document.querySelector('.set-user-status > .status-row > .status-busy') 
+        findButtonBusy.addEventListener('click', function() {
+            getClass.remove(getClass[1])
+            getProfileStatus.classList.add('avatar-status-busy-color')
+            getProfileStatus.innerHTML = '<div class="status-cut-busy"></div>'
+            localStorage.setItem('userStatus', 2)
+        })
+
+        //Change Status (Busy)
+        const findButtonAway = document.querySelector('.set-user-status > .status-row > .status-away') 
+        findButtonAway.addEventListener('click', function() {
+            getClass.remove(getClass[1])
+            getProfileStatus.classList.add('avatar-status-away-color')
+            getProfileStatus.innerHTML = '<div class="status-cut-away"></div>'
+            localStorage.setItem('userStatus', 3)
+        })
+
+        //Change Status (Busy)
+        const findButtonInvisible = document.querySelector('.set-user-status > .status-row > .status-invisible') 
+        findButtonInvisible.addEventListener('click', function() {
+            getClass.remove(getClass[1])
+            getProfileStatus.classList.add('avatar-status-invisible-color')
+            getProfileStatus.innerHTML = '<div class="status-cut-invisible"></div>'
+            localStorage.setItem('userStatus', 4)
         })
     
         // Avatar

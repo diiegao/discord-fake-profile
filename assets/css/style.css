@@ -186,20 +186,55 @@ main > #content {
     position: relative;
     top: 20px;
     margin-left: 80px;
-    width: 15px;
-    height: 15px;
-    background-color: #faa91c;
-    border: #18191d solid 7px;
+    width: 16px;
+    height: 16px; 
+    border: #18191d solid 6px;
     border-radius: 50%;
     z-index: 1;
 }
 
-.avatar-status > .status-cut {
+.discord-profile > .avatar-status-online-color {
+    background-color: #3ba55d;
+}
+
+.discord-profile > .avatar-status-away-color {
+    background-color: #faa91c;
+}
+
+.discord-profile > .avatar-status-busy-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eb4044;
+}
+
+.discord-profile > .avatar-status-invisible-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #747f8d;
+}
+
+.avatar-status > .status-cut-busy {
+    width: 12px;
+    height: 4px;
+    background-color: #18191d;
+    border-radius: 3px;
+}
+
+.avatar-status > .status-cut-away {
     position: relative;
-    top: -2px;
-    left: -3px;
+    top: -1px;
+    left: -2px;
     width: 12px;
     height: 12px;
+    background-color: #18191d;
+    border-radius: 50%;
+}
+
+.avatar-status > .status-cut-invisible {
+    width: 8px;
+    height: 8px;
     background-color: #18191d;
     border-radius: 50%;
 }
