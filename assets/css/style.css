@@ -597,3 +597,25 @@ h3 {
 .status-row > .status-invisible {
     background-color: #b3b3b3;
 }
+
+#set-user-profile > .set-user-nitro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.set-user-nitro > .nitro-badges > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nitro-badges > ul > li {
+    margin: 0 1px;
+    cursor: pointer;
+}

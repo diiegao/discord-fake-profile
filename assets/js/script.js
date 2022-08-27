@@ -221,6 +221,19 @@
             getDivStatus.classList.add('avatar-status-online-color')
             getDivStatus.innerHTML = ''
         }
+
+        //Carregar NITRO badges
+        const getUserNitro = localStorage.getItem('userNitro')
+        const profileBoost = document.querySelector('.discord-profile > .profile-boost')
+
+        if(getUserNitro > 0) {
+            profileBoost.innerHTML = `
+                <img src="assets/img/badges/nitro.svg" alt="">
+                <img src="assets/img/badges/boost${getUserNitro}month.svg" alt="">
+            `
+        } else {
+            profileBoost.innerHTML = `<div style="width:22px; height:22px;"></div>`
+        }
    
         // Adicionar novo servidor (user)
         const buttonConfirmAddServer = document.querySelector('#confirm-add-server')
@@ -457,6 +470,24 @@
             getProfileStatus.classList.add('avatar-status-invisible-color')
             getProfileStatus.innerHTML = '<div class="status-cut-invisible"></div>'
             localStorage.setItem('userStatus', 4)
+        })
+
+        // Discord NITRO
+        const findButtonNitro = document.querySelectorAll('.set-user-nitro > .nitro-badges > ul > li')
+        findButtonNitro.forEach(e => {
+            e.addEventListener('click', function() {
+                console.log(this.dataset.nitroMonth)
+                const profileBoost = document.querySelector('.discord-profile > .profile-boost')
+                if(this.dataset.nitroMonth > 0) {
+                    profileBoost.innerHTML = `
+                        <img src="assets/img/badges/nitro.svg" alt="">
+                        <img src="assets/img/badges/boost${this.dataset.nitroMonth}month.svg" alt="">
+                    `
+                } else {
+                    profileBoost.innerHTML = `<div style="width:22px; height:22px;"></div>`
+                }
+                localStorage.setItem('userNitro', this.dataset.nitroMonth)
+            })
         })
     
         // Avatar
