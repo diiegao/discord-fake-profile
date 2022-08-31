@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
             icon: {}
         }]
     }, {
-        id: 159,
+        id: 7,
         name: "Samurai Army",
         roles: [
             {
@@ -239,7 +239,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 47,
+        id: 8,
         name: "GhostFace",
         roles: [
             {
@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 197,
+        id: 9,
         name: "Jelly Holder",
         roles: [
             {
@@ -310,7 +310,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 222,
+        id: 10,
         name: "Trippin Ape Tribe",
         roles: [
             {
@@ -332,7 +332,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 25,
+        id: 11,
         name: "Suave Seals",
         roles: [
             {
@@ -356,7 +356,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 59,
+        id: 12,
         name: "Broccoli DAO",
         roles: [
             {
@@ -390,7 +390,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 69,
+        id: 13,
         name: "Light Reapers {LIT}",
         roles: [
             {
@@ -405,7 +405,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 331,
+        id: 14,
         name: "Degen Apes Academy",
         roles: [
             {
@@ -425,7 +425,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 94,
+        id: 15,
         name: "Ghost Kid DAO",
         roles: [
             {
@@ -485,7 +485,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 189,
+        id: 16,
         name: "SoDead",
         roles: [
             {
@@ -661,7 +661,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Server List + Button
     getServerName.forEach((e, i) => {
         const selectServers = document.querySelector('header > .servers-roles')
-        const disableFixed = e.id >= 0 && e.id <= 6 ? "disabled" : ''
+        const disableFixed = e.id >= 0 && e.id <= 16 ? "disabled" : ''
         const createGroupButton = document.createElement('div')
         createGroupButton.classList.add('button-role-group')
         createGroupButton.innerHTML = `
