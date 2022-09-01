@@ -509,6 +509,55 @@ document.addEventListener("DOMContentLoaded", () => {
                 icon: {}
             }
         ]
+    }, {
+        id: 17,
+        name: "Famous Fox",
+        roles: [
+            {
+                name: "Kings",
+                color: "#e6db81",
+                icon: {}
+            },
+            {
+                name: "Raid Fox",
+                color: "#920000",
+                icon: {}
+            },
+            {
+                name: "foxydao",
+                color: "#af4509",
+                icon: {
+                    urlFirst: "https://cdn.discordapp.com/role-icons/894084950305931275/f90862d51667316cbff0f032ef568219.webp?size=16&quality=lossless"
+                }
+            },
+            {
+                name: "Fox",
+                color: "#c97970",
+                icon: {
+                    urlFirst: "https://cdn.discordapp.com/role-icons/881278120349564928/4b7161d2ad1cbad8614a5b1e30bcc970.webp?size=16&quality=lossless"
+                }
+            },
+            {
+                name: "Vibing Fox",
+                color: "#32d8cc",
+                icon: {}
+            },
+            {
+                name: "Gamer Fox",
+                color: "#b0da6c",
+                icon: {}
+            },
+            {
+                name: "Degen Fox",
+                color: "#bb3d3e",
+                icon: {}
+            },
+            {
+                name: "Lore Fox",
+                color: "#feb100",
+                icon: {}
+            }
+        ]
     }]
 
     // Adiciona servidores de usuario nos servidores fixo
@@ -661,7 +710,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Server List + Button
     getServerName.forEach((e, i) => {
         const selectServers = document.querySelector('header > .servers-roles')
-        const disableFixed = e.id >= 0 && e.id <= 16 ? "disabled" : ''
+        const disableFixed = e.id >= 0 && e.id <= 17 ? `disabled style="display:none;"` : ''
         const createGroupButton = document.createElement('div')
         createGroupButton.classList.add('button-role-group')
         createGroupButton.innerHTML = `
