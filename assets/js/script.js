@@ -18,21 +18,21 @@ document.addEventListener("DOMContentLoaded", () => {
             icon: {}
         }, {
             name: 'Alpha',
-            color: '#babbbf',
+            color: '#546e7b',
             icon: {}
         }, {
             name: 'potheads',
-            color: '#babbbf',
+            color: '#546e7b',
             icon: {
                 urlFirst: 'assets/img/emojis/40115dda7d9f615f9561a451236d9623.svg'
             }
         }, {
             name: 'WL purge alerts',
-            color: '#babbbf',
+            color: '#546e7b',
             icon: {}
         }, {
             name: 'Giveaways',
-            color: '#babbbf',
+            color: '#546e7b',
             icon: {}
         }]
     }, {
