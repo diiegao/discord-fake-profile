@@ -558,6 +558,141 @@ document.addEventListener("DOMContentLoaded", () => {
                 icon: {}
             }
         ]
+    }, {
+        "id": 18,
+        "name": "Aurory Project",
+        "roles": [
+            {
+                "name": "Certified Aurorian",
+                "color": "#1bbc9b",
+                "icon": {}
+            },
+            {
+                "name": "Aurorians",
+                "color": "#607d8b",
+                "icon": {}
+            },
+            {
+                "name": "NFT Enjoyer",
+                "color": "#e95d5d",
+                "icon": {}
+            },
+            {
+                "name": "Quiz Alert",
+                "color": "#2ecc71",
+                "icon": {}
+            },
+            {
+                "name": "Raider Team",
+                "color": "#09372b",
+                "icon": {}
+            }
+        ]
+    }, {
+        "id": 19,
+        "name": "Big Foot Holder",
+        "roles": [
+            {
+                "name": "BigFoot Dreamer",
+                "color": "#1bf0cb",
+                "icon": {
+                    "urlFirst": "https://discord-fake-profile.onrender.com/assets/img/emojis/0933c4860868252befc05509165a1db4.svg"
+                }
+            },
+            {
+                "name": "BigFoot Whitelist",
+                "color": "#3498db",
+                "icon": {
+                    "urlFirst": "https://discord-fake-profile.onrender.com/assets/img/emojis/5a8d9af8b5b3922097b2cccfce844630.svg"
+                }
+            },
+            {
+                "name": "BigFoot Lover",
+                "color": "#ffffff",
+                "icon": {}
+            }
+        ]
+    }, {
+        "id": 20,
+        "name": "TombStoned",
+        "roles": [
+            {
+                "name": "Stoned to the Bone",
+                "color": "#0c0c0c",
+                "icon": {
+                    "urlFirst": "https://cdn.discordapp.com/role-icons/959552817096425572/1f10686b53aa0a653633b3cf3bdb5a21.webp?size=16&quality=lossless"
+                }
+            },
+            {
+                "name": "Stoned Skeleton",
+                "color": "#2ecc71",
+                "icon": {
+                    "urlFirst": "https://cdn.discordapp.com/role-icons/927773492101931008/e8359f9e5e21fa6af85f9654458d88b3.webp?size=16&quality=lossless"
+                }
+            }
+        ]
+    }, {
+        "id": 21,
+        "name": "AI Labs Holder",
+        "roles": [
+            {
+                "name": "Cloud Walker",
+                "color": "#1bbc9b",
+                "icon": {}
+            },
+            {
+                "name": "Whitelist I",
+                "color": "#ff7673",
+                "icon": {}
+            },
+            {
+                "name": "Human",
+                "color": "#1f6694",
+                "icon": {}
+            }
+        ]
+    }, {
+        "id": 22,
+        "name": "Satori Holder",
+        "roles": [
+            {
+                "name": "Satorian",
+                "color": "#2ecc70",
+                "icon": {}
+            },
+            {
+                "name": "Awakened",
+                "color": "#5b46ea",
+                "icon": {}
+            },
+            {
+                "name": "Meditators",
+                "color": "#f1c40e",
+                "icon": {}
+            },
+            {
+                "name": "Verified",
+                "color": "#01d2fb",
+                "icon": {}
+            }
+        ]
+    }, {
+        "id": 23,
+        "name": "Cyberlinx Holder",
+        "roles": [
+            {
+                "name": "Linx Rebels",
+                "color": "#62e8ff",
+                "icon": {
+                    "urlFirst": "https://cdn.discordapp.com/role-icons/1016890170752127027/e0f25578c29702e91878ff3953ded9be.webp?size=16&quality=lossless"
+                }
+            },
+            {
+                "name": "Verified",
+                "color": "#dfcece",
+                "icon": {}
+            }
+        ]
     }]
 
     // Adiciona servidores de usuario nos servidores fixo
