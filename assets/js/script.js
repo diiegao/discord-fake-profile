@@ -863,7 +863,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Server List + Button
     getServerName.forEach((e, i) => {
         const selectServers = document.querySelector('header > .servers-roles')
-        const disableFixed = e.id >= 0 && e.id <= 17 ? `disabled style="display:none;"` : ''
+        const disableFixed = e.id >= 0 && e.id <= 23 ? `disabled style="display:none;"` : ''
         const createGroupButton = document.createElement('div')
         createGroupButton.classList.add('button-role-group')
         createGroupButton.innerHTML = `
