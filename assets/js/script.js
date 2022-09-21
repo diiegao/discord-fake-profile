@@ -36,89 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
             icon: {}
         }]
     }, {
-        id: 1,
-        name: 'Sniper DAO',
-        roles: [{
-            name: 'Sniper Gang',
-            color: '#00dcff',
-            icon: {}
-        }, {
-            name: 'alpha α',
-            color: '#3598db',
-            icon: {}
-        }, {
-            name: 'Players',
-            color: '#babbbf',
-            icon: {}
-        }]
-    }, {
-        id: 2,
-        name: 'Whitelist HUB',
-        roles: [{
-            name: 'HUB HOLDER',
-            color: '#e8c545',
-            icon: {}
-        }, {
-            name: 'Alpha Hub',
-            color: '#babbbf',
-            icon: {}
-        }, {
-            name: 'Whitelist Opportunities',
-            color: '#babbbf',
-            icon: {}
-        }, {
-            name: 'VERIFIED',
-            color: '#5497d6',
-            icon: {}
-        }]
-    }, {
-        id: 3,
-        name: 'Jelly eSports',
-        roles: [{
-            name: '🐶 DAWG LIST',
-            color: '#9b59b6',
-            icon: {
-                urlFirst: 'assets/img/dawg.svg'
-            }
-        }, {
-            name: 'WL Ping',
-            color: '#f8f3f3',
-            icon: {}
-        }, {
-            name: 'Alpha Ping',
-            color: '#f7f3f3',
-            icon: {}
-        }, {
-            name: 'Raider Ping',
-            color: '#ffffff',
-            icon: {}
-        }]
-    }, {
-        id: 4,
-        name: 'AI Battle Degens',
-        roles: [{
-            name: 'Recruit',
-            color: '#3598db',
-            icon: {}
-        }, {
-            name: 'Gamers',
-            color: '#ce0d0e',
-            icon: {}
-        }, {
-            name: 'Need WL',
-            color: '#ffffff',
-            icon: {}
-        }, {
-            name: 'Raids',
-            color: '#00ec66',
-            icon: {}
-        }, {
-            name: 'Giveaways',
-            color: '#ff7500',
-            icon: {}
-        }]
-    }, {
-        id: 5,
+        id: 0,
         name: 'Alpha C',
         roles: [{
             name: 'Membro VIP',
@@ -190,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
             icon: {}
         }]
     }, {
-        id: 6,
+        id: 0,
         name: 'Thomas DAO',
         roles: [{
             name: 'Server Booster',
@@ -210,7 +128,147 @@ document.addEventListener("DOMContentLoaded", () => {
             icon: {}
         }]
     }, {
-        id: 7,
+        id: 0,
+        name: 'Sushiii DAO',
+        roles: [{
+            name: '🍣True Frens',
+            color: '#ffba86',
+            icon: {
+                urlFirst: 'https://cdn.discordapp.com/role-icons/963341965334810624/265a5f0a1765c2a962162bc05cee61bf.webp?size=16&quality=lossless'
+            }
+        }, {
+            name: 'Alpha Leak',
+            color: '#cf4a4a',
+            icon: {}
+        }, {
+            name: 'Daily Mints',
+            color: '#f59637',
+            icon: {}
+        }, {
+            name: 'Wallet Submission',
+            color: '#11806a',
+            icon: {
+                urlFirst: 'https://cdn.discordapp.com/role-icons/963148847322890300/1f182893294f3580b5f800a48950f21d.webp?size=16&quality=lossless'
+            }
+        }, {
+            name: 'Red Flag',
+            color: '#ff0000',
+            icon: {}
+        }, {
+            name: 'Token Ping',
+            color: '#ffd13b',
+            icon: {
+                urlFirst: 'https://cdn.discordapp.com/role-icons/963149141070975026/e8b04c5453e1e8f1455c0da6b1a79215.webp?size=16&quality=lossless'
+            }
+        }, {
+            name: 'Purge Ping',
+            color: '#eb7545',
+            icon: {
+                urlFirst: 'https://cdn.discordapp.com/role-icons/963149286919528459/833b0b71363f55cea3613ba53b19dc9e.webp?size=16&quality=lossless'
+            }
+        }, {
+            name: 'WL Ping',
+            color: '#ffffff',
+            icon: {
+                urlFirst: 'https://cdn.discordapp.com/role-icons/963149396856410152/855e42b9797b0eae16640e463d2d4cec.webp?size=16&quality=lossless'
+            }
+        }, {
+            name: 'WL Games',
+            color: '#9b59b6',
+            icon: {
+                urlFirst: 'https://cdn.discordapp.com/role-icons/964049945164414996/e200691b53185f1d3ad1e8176fafd566.webp?size=16&quality=lossless'
+            }
+        }, {
+            name: 'Degen',
+            color: '#67aa68',
+            icon: {
+                urlFirst: 'https://cdn.discordapp.com/role-icons/984830445910913055/8c1ebb61a1b66bcc683c755f083b2a59.webp?size=16&quality=lossless'
+            }
+        }]
+    },{
+        id: 0,
+        name: 'Sniper DAO',
+        roles: [{
+            name: 'Sniper Gang',
+            color: '#00dcff',
+            icon: {}
+        }, {
+            name: 'alpha α',
+            color: '#3598db',
+            icon: {}
+        }, {
+            name: 'Players',
+            color: '#babbbf',
+            icon: {}
+        }]
+    }, {
+        id: 0,
+        name: 'Whitelist HUB',
+        roles: [{
+            name: 'HUB HOLDER',
+            color: '#e8c545',
+            icon: {}
+        }, {
+            name: 'Alpha Hub',
+            color: '#babbbf',
+            icon: {}
+        }, {
+            name: 'Whitelist Opportunities',
+            color: '#babbbf',
+            icon: {}
+        }, {
+            name: 'VERIFIED',
+            color: '#5497d6',
+            icon: {}
+        }]
+    }, {
+        id: 0,
+        name: 'Jelly eSports',
+        roles: [{
+            name: '🐶 DAWG LIST',
+            color: '#9b59b6',
+            icon: {
+                urlFirst: 'assets/img/dawg.svg'
+            }
+        }, {
+            name: 'WL Ping',
+            color: '#f8f3f3',
+            icon: {}
+        }, {
+            name: 'Alpha Ping',
+            color: '#f7f3f3',
+            icon: {}
+        }, {
+            name: 'Raider Ping',
+            color: '#ffffff',
+            icon: {}
+        }]
+    }, {
+        id: 0,
+        name: 'AI Battle Degens',
+        roles: [{
+            name: 'Recruit',
+            color: '#3598db',
+            icon: {}
+        }, {
+            name: 'Gamers',
+            color: '#ce0d0e',
+            icon: {}
+        }, {
+            name: 'Need WL',
+            color: '#ffffff',
+            icon: {}
+        }, {
+            name: 'Raids',
+            color: '#00ec66',
+            icon: {}
+        }, {
+            name: 'Giveaways',
+            color: '#ff7500',
+            icon: {}
+        }]
+    }, {
+        id: 0,
         name: "Samurai Army",
         roles: [
             {
@@ -257,7 +315,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 8,
+        id: 0,
         name: "GhostFace",
         roles: [
             {
@@ -284,7 +342,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 9,
+        id: 0,
         name: "Jelly Holder",
         roles: [
             {
@@ -328,7 +386,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 10,
+        id: 0,
         name: "Trippin Ape Tribe",
         roles: [
             {
@@ -350,7 +408,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 11,
+        id: 0,
         name: "Suave Seals",
         roles: [
             {
@@ -374,7 +432,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 12,
+        id: 0,
         name: "Broccoli DAO",
         roles: [
             {
@@ -408,7 +466,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 13,
+        id: 0,
         name: "Light Reapers {LIT}",
         roles: [
             {
@@ -423,7 +481,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 14,
+        id: 0,
         name: "Degen Apes Academy",
         roles: [
             {
@@ -443,7 +501,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 15,
+        id: 0,
         name: "Ghost Kid DAO",
         roles: [
             {
@@ -503,7 +561,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 16,
+        id: 0,
         name: "SoDead",
         roles: [
             {
@@ -528,7 +586,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        id: 17,
+        id: 0,
         name: "Famous Fox",
         roles: [
             {
@@ -577,138 +635,138 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ]
     }, {
-        "id": 18,
-        "name": "Aurory Project",
-        "roles": [
+        id: 0,
+        name: "Aurory Project",
+        roles: [
             {
-                "name": "Certified Aurorian",
-                "color": "#1bbc9b",
-                "icon": {}
+                name: "Certified Aurorian",
+                color: "#1bbc9b",
+                icon: {}
             },
             {
-                "name": "Aurorians",
-                "color": "#607d8b",
-                "icon": {}
+                name: "Aurorians",
+                color: "#607d8b",
+                icon: {}
             },
             {
-                "name": "NFT Enjoyer",
-                "color": "#e95d5d",
-                "icon": {}
+                name: "NFT Enjoyer",
+                color: "#e95d5d",
+                icon: {}
             },
             {
-                "name": "Quiz Alert",
-                "color": "#2ecc71",
-                "icon": {}
+                name: "Quiz Alert",
+                color: "#2ecc71",
+                icon: {}
             },
             {
-                "name": "Raider Team",
-                "color": "#09372b",
-                "icon": {}
+                name: "Raider Team",
+                color: "#09372b",
+                icon: {}
             }
         ]
     }, {
-        "id": 19,
-        "name": "Big Foot Holder",
-        "roles": [
+        id: 0,
+        name: "Big Foot Holder",
+        roles: [
             {
-                "name": "BigFoot Dreamer",
-                "color": "#1bf0cb",
-                "icon": {
-                    "urlFirst": "https://discord-fake-profile.onrender.com/assets/img/emojis/0933c4860868252befc05509165a1db4.svg"
+                name: "BigFoot Dreamer",
+                color: "#1bf0cb",
+                icon: {
+                    urlFirst: "https://discord-fake-profile.onrender.com/assets/img/emojis/0933c4860868252befc05509165a1db4.svg"
                 }
             },
             {
-                "name": "BigFoot Whitelist",
-                "color": "#3498db",
-                "icon": {
-                    "urlFirst": "https://discord-fake-profile.onrender.com/assets/img/emojis/5a8d9af8b5b3922097b2cccfce844630.svg"
+                name: "BigFoot Whitelist",
+                color: "#3498db",
+                icon: {
+                    urlFirst: "https://discord-fake-profile.onrender.com/assets/img/emojis/5a8d9af8b5b3922097b2cccfce844630.svg"
                 }
             },
             {
-                "name": "BigFoot Lover",
-                "color": "#ffffff",
-                "icon": {}
+                name: "BigFoot Lover",
+                color: "#ffffff",
+                icon: {}
             }
         ]
     }, {
-        "id": 20,
-        "name": "TombStoned",
-        "roles": [
+        id: 0,
+        name: "TombStoned",
+        roles: [
             {
-                "name": "Stoned to the Bone",
-                "color": "#0c0c0c",
-                "icon": {
-                    "urlFirst": "https://cdn.discordapp.com/role-icons/959552817096425572/1f10686b53aa0a653633b3cf3bdb5a21.webp?size=16&quality=lossless"
+                name: "Stoned to the Bone",
+                color: "#0c0c0c",
+                icon: {
+                    urlFirst: "https://cdn.discordapp.com/role-icons/959552817096425572/1f10686b53aa0a653633b3cf3bdb5a21.webp?size=16&quality=lossless"
                 }
             },
             {
-                "name": "Stoned Skeleton",
-                "color": "#2ecc71",
-                "icon": {
-                    "urlFirst": "https://cdn.discordapp.com/role-icons/927773492101931008/e8359f9e5e21fa6af85f9654458d88b3.webp?size=16&quality=lossless"
+                name: "Stoned Skeleton",
+                color: "#2ecc71",
+                icon: {
+                    urlFirst: "https://cdn.discordapp.com/role-icons/927773492101931008/e8359f9e5e21fa6af85f9654458d88b3.webp?size=16&quality=lossless"
                 }
             }
         ]
     }, {
-        "id": 21,
-        "name": "AI Labs Holder",
-        "roles": [
+        id: 0,
+        name: "AI Labs Holder",
+        roles: [
             {
-                "name": "Cloud Walker",
-                "color": "#1bbc9b",
-                "icon": {}
+                name: "Cloud Walker",
+                color: "#1bbc9b",
+                icon: {}
             },
             {
-                "name": "Whitelist I",
-                "color": "#ff7673",
-                "icon": {}
+                name: "Whitelist I",
+                color: "#ff7673",
+                icon: {}
             },
             {
-                "name": "Human",
-                "color": "#1f6694",
-                "icon": {}
+                name: "Human",
+                color: "#1f6694",
+                icon: {}
             }
         ]
     }, {
-        "id": 22,
-        "name": "Satori Holder",
-        "roles": [
+        id: 0,
+        name: "Satori Holder",
+        roles: [
             {
-                "name": "Satorian",
-                "color": "#2ecc70",
-                "icon": {}
+                name: "Satorian",
+                color: "#2ecc70",
+                icon: {}
             },
             {
-                "name": "Awakened",
-                "color": "#5b46ea",
-                "icon": {}
+                name: "Awakened",
+                color: "#5b46ea",
+                icon: {}
             },
             {
-                "name": "Meditators",
-                "color": "#f1c40e",
-                "icon": {}
+                name: "Meditators",
+                color: "#f1c40e",
+                icon: {}
             },
             {
-                "name": "Verified",
-                "color": "#01d2fb",
-                "icon": {}
+                name: "Verified",
+                color: "#01d2fb",
+                icon: {}
             }
         ]
     }, {
-        "id": 23,
-        "name": "Cyberlinx Holder",
-        "roles": [
+        id: 0,
+        name: "Cyberlinx Holder",
+        roles: [
             {
-                "name": "Linx Rebels",
-                "color": "#62e8ff",
-                "icon": {
-                    "urlFirst": "https://cdn.discordapp.com/role-icons/1016890170752127027/e0f25578c29702e91878ff3953ded9be.webp?size=16&quality=lossless"
+                name: "Linx Rebels",
+                color: "#62e8ff",
+                icon: {
+                    urlFirst: "https://cdn.discordapp.com/role-icons/1016890170752127027/e0f25578c29702e91878ff3953ded9be.webp?size=16&quality=lossless"
                 }
             },
             {
-                "name": "Verified",
-                "color": "#dfcece",
-                "icon": {}
+                name: "Verified",
+                color: "#dfcece",
+                icon: {}
             }
         ]
     }]
@@ -863,7 +921,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Server List + Button
     getServerName.forEach((e, i) => {
         const selectServers = document.querySelector('header > .servers-roles')
-        const disableFixed = e.id >= 0 && e.id <= 23 ? `disabled style="display:none;"` : ''
+        const disableFixed = e.id == 0 ? `disabled style="display:none;"` : ''
         const createGroupButton = document.createElement('div')
         createGroupButton.classList.add('button-role-group')
         createGroupButton.innerHTML = `
