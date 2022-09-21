@@ -185,7 +185,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 urlFirst: 'https://cdn.discordapp.com/role-icons/984830445910913055/8c1ebb61a1b66bcc683c755f083b2a59.webp?size=16&quality=lossless'
             }
         }]
-    },{
+    }, {
+        id: 0,
+        name: 'Sleepy Pandas',
+        roles: [{
+            name: 'Panda Holder',
+            color: '#fa65ef',
+            icon: {}
+        }, {
+            name: 'Panda',
+            color: '#2dcc70',
+            icon: {}
+        }, {
+            name: '$Raider',
+            color: '#ad1358',
+            icon: {}
+        }]
+    }, {
         id: 0,
         name: 'Sniper DAO',
         roles: [{
