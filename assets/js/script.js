@@ -187,6 +187,192 @@ document.addEventListener("DOMContentLoaded", () => {
         }]
     }, {
         id: 0,
+        name: 'Patches',
+        roles: [{
+            name: 'Patches PASS',
+            color: '#e67e22',
+            icon: {}
+        }, {
+            name: 'Patch',
+            color: '#3498db',
+            icon: {}
+        }, {
+            name: ':(',
+            color: '#e74c3c',
+            icon: {}
+        }]
+    }, {
+        id: 0,
+        name: "Satori",
+        roles: [
+            {
+                name: "Satorian",
+                color: "#2ecc70",
+                icon: {}
+            },
+            {
+                name: "Awakened",
+                color: "#5b46ea",
+                icon: {}
+            },
+            {
+                name: "Meditators",
+                color: "#f1c40e",
+                icon: {}
+            },
+            {
+                name: "Giveaways Alerts",
+                color: "#ffffff",
+                icon: {}
+            },
+            {
+                name: "Zen Raiders",
+                color: "#c5e284",
+                icon: {}
+            },
+            {
+                name: "Alpha Alerts",
+                color: "#fed701",
+                icon: {}
+            },
+            {
+                name: "Event Alerts",
+                color: "#fe0000",
+                icon: {}
+            },
+            {
+                name: "Verified",
+                color: "#01d2fb",
+                icon: {}
+            },
+            {
+                name: "Manifest Whitelist",
+                color: "#fafafa",
+                icon: {}
+            }
+        ]
+    }, {
+        id: 0,
+        name: 'Kirin Kingdom',
+        roles: [{
+            name: 'Verified Holder',
+            color: '#fa96ff',
+            icon: {}
+        }, {
+            name: 'Mikuko Citizen',
+            color: '#f1c40f',
+            icon: {}
+        }, {
+            name: 'RAIDS',
+            color: '#0088fe',
+            icon: {}
+        }, {
+            name: 'Daily Mints',
+            color: '#e84e3e',
+            icon: {}
+        }, {
+            name: 'Alpha Pings',
+            color: '#babbbf',
+            icon: {}
+        }, {
+            name: 'early project pings',
+            color: '#bbbcbf',
+            icon: {}
+        }, {
+            name: 'degen pings',
+            color: '#607e89',
+            icon: {}
+        }, {
+            name: 'community calls',
+            color: '#ea1e63',
+            icon: {}
+        }, {
+            name: 'wallet submission',
+            color: '#b97d7d',
+            icon: {}
+        }]
+    }, {
+        id: 0,
+        name: 'Simpl3r: Bounty Hunter',
+        roles: [{
+            name: 'Bounty hunter',
+            color: '#2fcb70',
+            icon: {
+                urlFirst: 'https://cdn.discordapp.com/role-icons/1002526017132433469/24272a931a6ad8f1a3f60378af3cd3f4.webp?size=16&quality=lossless'
+            }
+        }, {
+            name: 'VIP List',
+            color: '#9682ff',
+            icon: {}
+        }, {
+            name: 'Pre-Sale',
+            color: '#f4c37e',
+            icon: {}
+        }, {
+            name: 'Whitelist',
+            color: '#e86793',
+            icon: {}
+        }, {
+            name: 'Hunter',
+            color: '#208b4d',
+            icon: {}
+        }, {
+            name: 'M11',
+            color: '#babbbf',
+            icon: {}
+        }]
+    }, {
+        id: 0,
+        name: 'The Sports Club',
+        roles: [{
+            name: 'Most Valuable Player 🏆',
+            color: '#0fbff1',
+            icon: {}
+        }, {
+            name: 'Members',
+            color: '#607d8b',
+            icon: {}
+        }, {
+            name: 'New User',
+            color: '#b9bbbe',
+            icon: {}
+        }]
+    }, {
+        id: 0,
+        name: 'Hyper Drifter',
+        roles: [{
+            name: 'True Drifters',
+            color: '#885ee6',
+            icon: {
+                urlFirst: 'https://cdn.discordapp.com/role-icons/1018201371591319602/06251b1328b5415fb3858e3c96fb4f5d.webp?size=16&quality=lossless'
+            }
+        }, {
+            name: 'Drifters',
+            color: '#1debd0',
+            icon: {}
+        }, {
+            name: 'Alpha Drifters',
+            color: '#2ecc71',
+            icon: {}
+        }, {
+            name: 'Giveaway Drifters',
+            color: '#ec5b8f',
+            icon: {}
+        }, {
+            name: 'Whitelist Drifters',
+            color: '#3498db',
+            icon: {}
+        }, {
+            name: 'Degen Drifters',
+            color: '#f84646',
+            icon: {}
+        }, {
+            name: 'Raider Drifters',
+            color: '#9fe4da',
+            icon: {}
+        }]
+    }, {
+        id: 0,
         name: 'Sleepy Pandas',
         roles: [{
             name: 'Panda Holder',
@@ -740,31 +926,6 @@ document.addEventListener("DOMContentLoaded", () => {
             {
                 name: "Human",
                 color: "#1f6694",
-                icon: {}
-            }
-        ]
-    }, {
-        id: 0,
-        name: "Satori Holder",
-        roles: [
-            {
-                name: "Satorian",
-                color: "#2ecc70",
-                icon: {}
-            },
-            {
-                name: "Awakened",
-                color: "#5b46ea",
-                icon: {}
-            },
-            {
-                name: "Meditators",
-                color: "#f1c40e",
-                icon: {}
-            },
-            {
-                name: "Verified",
-                color: "#01d2fb",
                 icon: {}
             }
         ]
